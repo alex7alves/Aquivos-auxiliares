@@ -2,7 +2,7 @@
 
 title  Compilando 
 echo Criando as bibliotecas...
-
+echo.
 
 cd C:\Portugol-IDE\IDE\lua-5.3.3\src
 mingw32-make.exe mingw
@@ -13,8 +13,9 @@ gcc -shared *.o -o lpeglabel.dll -L C:\Portugol-IDE\IDE\lua-5.3.3\src -llua53
 @copy lpeglabel.dll C:\Portugol-IDE\IDE\lua-5.3.3\src
 @SET path = %path% ; C:\Portugol-IDE\IDE\lua-5.3.3\src
 @SETX  path  C:\Portugol-IDE\IDE\lua-5.3.3\src
-
-
+cd C:\Portugol-IDE\IDE\lua-5.3.3\src
+ren lua.exe lua53.exe
+echo.
 echo ***** Concluido *****
 pause
 exit 
