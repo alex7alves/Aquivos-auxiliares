@@ -2,7 +2,7 @@
 
 echo Desinstalando...
 @cd C:\
-@rd/S/Q Portugol-IDE
+@rd/S/Q QuoGol-IDE
 
 echo.
 
